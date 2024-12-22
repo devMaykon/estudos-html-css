@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios CSS Grid</title>
+
+    <style>
+
+        @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Oswald', sans-serif;
+            background-color: black;
+            color: white;
+            width: 800px;
+            margin: 0 auto;
+        }
+        h1 {
+            font-weight: bold;
+            background-color: gray;
+            border-bottom: solid 4px lightskyblue;
+            padding: 10px;
+            text-align: center;
+            margin: 0;
+        }
+
+        ul {
+            background-color: white;
+            margin: 0;
+            padding: 0;
+            list-style: none; 
+        }
+
+        a {
+            display: inline-block;
+            text-decoration: none;
+            color: black;
+            width: 100%;
+            text-align: center;
+            padding: 10px;
+        }
+
+        a:hover{
+            background-color: lightgray;
+        }
+
+        .navegacao > ul {
+            display: inline-block;
+            vertical-align: top;
+            width: 398px;
+        }
+
+
+    </style>
+
+</head>
+<body>
+    <h1>Exercícios CSS Grid</h1>
+
+    <div class="navegacao">
+        <ul>
+            <li>
+                <a href="./linhas_colunas.html">Linhas e colunas  #01</a>
+            </li>
+            <li>
+                <a href=".//span_1.html">Span 1 #02</a>
+            </li>
+            <li>
+                <a href="./span_2.html">Span 2 #03</a>
+            </li>
+            <li>
+                <a href="./span_3.html">Span 3 #04</a>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <a href="./span_4.html">Span 4 #05</a>
+            </li>
+            <li>
+                <a href="./espaços_1.html">Espaços 1 #06</a>
+            </li>
+            <li>
+                <a href="./areas.html">Áreas #06</a>
+            </li>
+            <li>
+                <a href="./areas _responsivas.html">Áreas Responsivas #07</a>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio Menu</title>
+
+    <style>
+
+        @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+        *{
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background-color: #BBB;
+            /* background-color: black; */
+            font-family: 'Oswald', sans-serif;
+        }
+
+        .cabecalho{
+            background-color: #333;
+            color: white;
+            border-bottom: solid 3px #06caca;
+            height: 80px;
+            padding: 0 10px;
+            font-size: 1.4rem;
+            font-weight: 200px;
+
+
+           display: flex; /* para que os elementos sejam exibidos em linha */
+           align-items: center; /* alinha verticalmente ao CROSS AXIS */
+
+        }
+
+        .logo img {
+            height: 50px;
+        }
+
+        .menu {
+            flex-grow: 1;
+        }
+
+        .menu > ul {
+            list-style: none;
+            display: flex;
+            
+        }
+
+        .menu a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            
+        }
+
+        .menu a:hover{
+            background-color: #06caca;
+            border-radius: 8px;
+        }
+
+
+        .botao {
+            padding: 5px 30px;
+            background-color: black;
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+        }
+
+        .botao.destaque {
+            background-color: crimson;
+        }
+
+
+
+    </style>
+
+
+</head>
+<body>
+    <!--Tags semânticas-->
+    <header class="cabecalho">   
+        <div class="logo">
+            <a href="#inicio">
+                <img src="http://files.cod3r.com.br/curso-web/logo.png" alt="logo-cod3r">
+            </a>
+        </div>    
+        <nav class="menu"> <!--Aqui vai o menu de navegação-->
+            <ul>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#curso">Curso</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#contatos">Contatos</a></li>
+            </ul>
+        </nav> 
+        <div class="botoes-autenticacao">
+                <a class="botao" href="#login">Login</a>
+                <a class="botao destaque" href="#cadastro">Cadastro</a>
+        </div>
+    </header>
+</body>
+</html>

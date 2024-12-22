@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletores #02</title>
+
+    <style>
+        body {
+            background-color: black;
+            color: white;
+        }
+
+        div:nth-child(even) { 
+            background-color: rebeccapurple;
+        }
+
+        div:nth-child(odd) {
+            background-color: plum;
+        }
+
+        div:hover{
+            background-color: purple;
+        }
+
+        input:focus{ 
+            outline: none;
+            border: 2px solid greenyellow;
+            border-radius: 2px;
+        }
+
+        p::first-letter{
+            font-size: 50px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h2>Seletores de Pseudo-Classes</h2>
+    <div>A</div>
+    <div>B</div>
+    <div>C</div>
+    <input type="text">
+
+    <h2>Seletores de Pseudo-Elementos</h2>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione, laborum incidunt maiores consectetur enim eius laboriosam molestiae alias blanditiis consequuntur distinctio voluptates dolore, natus aut cum excepturi eaque nam doloremque.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam impedit adipisci, culpa reprehenderit similique nemo cumque quibusdam obcaecati quo? Itaque nostrum obcaecati laborum suscipit. Suscipit sunt natus quas quo facere?</p>
+
+    <hr>
+    <br>
+    <a href="./exercicios.html">Voltar</a>
+</body>
+</html>

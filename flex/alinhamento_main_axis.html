@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox: Alinhamento Main Axis</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+        }
+
+        .flex-container {
+            border: solid 5px crimson;
+
+            display: flex;
+
+            flex-direction: row;
+
+            /* Alinhamento Main Axis */
+            justify-content: start; /* Valor padrão */
+            justify-content: center; /* Alinha ao centro */
+            justify-content: end; /* Alinha para a direita (final da linha) */
+            justify-content: space-between; /* Espalha os elementos */
+            justify-content: space-around; /* Espalha os elementos em ambos os lados */
+        }
+
+        .flex-container > div {  /*elementos do tipo div, que estão dentro de um flex-container */
+             border: solid 5px cyan;
+             padding: 5px;
+             margin: 5px;
+            }
+
+        .flex-container.vertical {
+            margin-top: 20px;
+            height: 400px;
+
+            flex-direction: column; 
+            /* justify-content:start;
+            justify-content:end;
+            justify-content:space-between; 
+            justify-content: space-around;   */
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Flexbox: Alinhamento Main Axis</h1>
+    <div class="flex-container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>3</div>
+        <div>10</div>
+    </div>
+    <div class="flex-container vertical">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+</body>
+</html>

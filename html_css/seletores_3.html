@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletores #03</title>
+
+    <style>
+        body {
+            background-color: rgb(0, 0, 0);
+            color: white;
+        }
+
+        span + p { 
+            background-color: rgb(210, 105, 30);
+        }
+
+        div ~ p { 
+            background-color: rgb(138, 43, 226);
+        }
+
+        .exemplo_filhos > p{
+            background-color: rgb(220, 20, 60);
+        }
+
+        #exemplo_filhos_descendentes p {
+            background-color: fuchsia;
+        }
+
+       
+    </style>
+</head>
+<body>
+    <h2>Seletores Irmãos Adjacentes</h2>
+    <div>
+        <span>Agentes</span>
+        <p>Parágrafo #01</p>
+        <p>Parágrafo #02</p>
+    </div>
+
+    <h2>Seletores Irmãos Gerais</h2>
+    <div>
+        <div>Agentes</div>
+        <div></div>
+        <p>Parágrafo #01</p>
+        <p>Parágrafo #02</p>
+    </div>
+
+    <h2>Seletores de Filhos (Descendentes Diretos)</h2>
+    <div class="exemplo_filhos">
+        <p>Parágrafo #01</p> 
+        <div>
+            <p>Parágrafo #02</p> 
+        </div>
+    </div>
+
+    <h2>Seletores de Filhos (Todos os Descendentes)</h2>
+    <div id="exemplo_filhos_descendentes">
+        <p>Parágrafo #01</p> 
+        <div>
+            <p>Parágrafo #02</p> 
+        </div>
+    </div>
+
+    <hr>
+    <br>
+    <a href="./exercicios.html">Voltar</a>
+</body>
+</html>

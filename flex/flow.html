@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox: Diração & Quebra de linha</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+        }
+
+        .flex-container {
+            border: solid 5px crimson;
+
+            display: flex;
+            /* Definir o MAIN AXIS => Flex-direction - Direção dos FLEX ITEMS */
+            flex-direction: row;  /* Esse é o valor padrão (Web)*/
+            flex-direction: column; /* Esse é o valor padrão (Mobile)*/
+            flex-direction: row-reverse;
+            flex-direction: column-reverse; 
+            flex-direction: row;
+
+            width: 200px;
+
+            /* Definir a regra de Quebra de Linha */
+            flex-wrap: nowrap;
+            flex-wrap:wrap;
+            flex-wrap: wrap-reverse;
+            flex-flow: row-reverse wrap-reverse;
+        }
+
+        .flex-container > div {  /*elementos do tipo div, que estão dentro de um flex-container */
+             border: solid 5px cyan;
+             padding: 5px;
+             margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Flexbox: Diração & Quebra de linha</h1>
+    <p>Em vermelho temos o nosso flex-container - display: flex;</p>
+    <div class="flex-container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>3</div>
+        <div>10</div>
+    </div>
+</body>
+</html>

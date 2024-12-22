@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox: Alinhamento Self</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+        }
+
+        .flex-container {
+            height: 400px;
+            border: solid 5px crimson;
+
+            display: flex;
+            flex-direction: row; /* valor padrão */
+            justify-content: center; 
+            align-items: center;  
+            
+        }
+
+        .flex-container > div {  /*elementos do tipo div, que estão dentro de um flex-container */
+             border: solid 5px cyan;
+             padding: 5px;
+             margin: 5px;
+            }
+
+            .cima{
+                align-self: flex-start;
+            }
+
+            .baixo {
+                align-self: flex-end;
+            }
+
+            .nao-funciona-no-flex {
+                justify-self: flex-end; /* não funciona no flexbox */
+            }
+
+    </style>
+</head>
+<body>
+    <h1>Flexbox: Alinhamento Self</h1>
+    <div class="flex-container">
+        <div class="baixo">1</div>
+        <div>2</div>
+        <div class="cima">3</div>
+        <div>4</div>
+        <div class="baixo">5</div>
+    </div>
+</body>
+</html>

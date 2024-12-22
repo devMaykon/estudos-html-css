@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletores #01</title>
+
+    <style>
+        body {
+            background-color: black;
+            color: white;
+        }
+        section, span, p {
+            display: inline-block;
+            height: 50px;
+            width: 50px;
+            margin: 10px;
+            background-color: crimson;
+            font-size: 40px;
+            text-align: center;
+        }
+
+        .circulo {
+            display: inline-block;
+            height: 50px;
+            width: 50px;
+            margin: 10px;
+            border-radius: 25px; /* 50/2 */
+            background-color: blueviolet;
+            text-align: center;
+            font-size: 40px;
+        }
+
+        .destaque {
+            border: 4px yellow solid; 
+            color: yellow;
+            border-radius: 29px; /* 29px para manter a mesma proporção */
+
+        }
+
+        #botao_comprar {
+            height: 30px;
+            width:120px;
+            background-color:forestgreen;
+            color: white;
+            border: solid 1px white;
+            border-radius: 15px;
+            text-transform: uppercase; /* transforma em maiúsculo */
+        }
+
+        [href], [devSumir] { /* seleciona elementos que tenham a propriedade href ou devSumir */
+            display: none; /* esconde */
+        }
+
+        /* => seleciona todos os elementos  
+        * {
+            border: 2px solid greenyellow;
+            margin: 5px;
+        } */
+
+    </style>
+</head>
+<body>
+    <h2>Seletores de Elemento</h2>
+    <section>1</section> <!-- Seleciona todos os elementos section -->
+    <span>2</span>
+    <p>3</p>
+
+    <h2>Seletores de Classe</h2>
+    <div class="circulo">4</div>
+    <div class="circulo destaque">5</div>
+
+    <h2>Seletores de ID</h2>
+    <button id="botao_comprar">Comprar</button>
+
+    <h2>Seletores de Atibutos</h2>
+    <a href="https://google.com.br">Google</a>
+    <div devSumir>Esconder #01</div>
+    <main devSumir>Esconder #02</main> <!-- Define a seção mais importante do sistema -->
+
+    <h2>Seletor Universal</h2>
+    <label>Será aplicado em todos os elementos da página</label>
+
+    <hr>
+    <br>
+    <a href="./exercicios.html">Voltar</a>
+</body>
+</html>
